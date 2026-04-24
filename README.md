@@ -8,7 +8,7 @@ The [Stone Quarry](https://mods.vintagestory.at/stonequarry) mod by **DArkHekRoM
 
 It appears that DArkHekRoMaNT currently doesn't have the time or motivation to update his mods for VS 1.22. We love this mod — it's fantastic and we want to keep using it on our server. That's why I decided to make this repack.
 
-I'm aware that there are already twoforge repacks on ModDB by **TiMMyyMMiT** and **Kurallier**. Thank you both for your effort and work! Unfortunately, both of those repacks are done in a way that makes them **incompatible with the original mod** — meaning if you already have quarried stone blocks on your map, you would lose them. You would also lose them later when (hopefully) DArkHekRoMaNT returns to modding and I can happily archive this repack and go back to his original mod.
+I'm aware that there are already two forked repacks on ModDB by **TiMMyyMMiT** and **Kurallier**. Thank you both for your effort and work! Unfortunately, both of those repacks are done in a way that makes them **incompatible with the original mod** — meaning if you already have quarried stone blocks on your map, you would lose them. You would also lose them later when (hopefully) DArkHekRoMaNT returns to modding and I can happily archive this repack and go back to his original mod.
 
 ---
 
