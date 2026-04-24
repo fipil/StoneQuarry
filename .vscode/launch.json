@@ -1,0 +1,75 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Vintage Story Client (StoneQuarry)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${input:vintageStoryPath}/Vintagestory.exe",
+      "cwd": "${input:vintageStoryPath}",
+      "args": [
+        "--addModPath",
+        "${workspaceFolder}/.debugmods",
+        "--addOrigin",
+        "${workspaceFolder}/Assets",
+        "--tracelog"
+      ],
+      "preLaunchTask": "Prepare StoneQuarry debug mod",
+      "justMyCode": false,
+      "stopAtEntry": false
+    },
+    {
+      "name": "Vintage Story Client (StoneQuarry Test Creative)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${input:vintageStoryPath}/Vintagestory.exe",
+      "cwd": "${input:vintageStoryPath}",
+      "args": [
+        "-p",
+        "creativebuilding",
+        "-o",
+        "stone-quarry-test",
+        "--addModPath",
+        "${workspaceFolder}/.debugmods",
+        "--addOrigin",
+        "${workspaceFolder}/Assets",
+        "--tracelog"
+      ],
+      "preLaunchTask": "Prepare StoneQuarry debug mod",
+      "justMyCode": false,
+      "stopAtEntry": false
+    },
+    {
+      "name": "Vintage Story Server (StoneQuarry)",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${input:vintageStoryPath}/VintagestoryServer.exe",
+      "cwd": "${input:vintageStoryPath}",
+      "args": [
+        "--addModPath",
+        "${workspaceFolder}/.debugmods",
+        "--addOrigin",
+        "${workspaceFolder}/Assets",
+        "--tracelog"
+      ],
+      "preLaunchTask": "Prepare StoneQuarry debug mod",
+      "justMyCode": false,
+      "stopAtEntry": false
+    },
+    {
+      "name": "Attach to Vintage Story process",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}",
+      "justMyCode": false
+    }
+  ],
+  "inputs": [
+    {
+      "id": "vintageStoryPath",
+      "type": "promptString",
+      "description": "Path to your Vintage Story installation",
+      "default": "C:/VintageStory/1.22"
+    }
+  ]
+}
