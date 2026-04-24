@@ -1,4 +1,4 @@
-using CommonLib.Extensions;
+using StoneQuarry.Lib.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,7 +85,7 @@ namespace StoneQuarry
                 if (_currentDisplayedType != null)
                 {
                     string topName = $"top-{_currentDisplayedType}-{Inventory.StoredRock}";
-                    string topPath = $"{Core.ModId}:shapes/block/rubblestorage/top-{_currentDisplayedType}.json";
+                    string topPath = $"{Core.LegacyModId}:shapes/block/rubblestorage/top-{_currentDisplayedType}.json";
 
                     Vec3f? offset = null;
                     if (_currentDisplayedType != "plate")
@@ -100,7 +100,7 @@ namespace StoneQuarry
                 }
 
                 string buttonsName = $"buttons-{Inventory.StoredRock}";
-                string buttonsPath = $"{Core.ModId}:shapes/block/rubblestorage/buttons.json";
+                string buttonsPath = $"{Core.LegacyModId}:shapes/block/rubblestorage/buttons.json";
                 MeshData buttonsMesh = GetOrCreateMesh(buttonsName, buttonsPath, tessThreadTesselator);
                 mesher.AddMeshData(buttonsMesh);
             }
@@ -165,19 +165,19 @@ namespace StoneQuarry
             {
                 if (Inventory.StoredRock == null)
                 {
-                    dsc.AppendLine(Lang.Get($"{Core.ModId}:info-rubblestorage-empty"));
+                    dsc.AppendLine(Lang.Get($"{Core.LegacyModId}:info-rubblestorage-empty"));
                 }
                 else
                 {
-                    string stoneLangCode = $"{Core.ModId}:info-rubblestorage-stone(count={{0}})";
-                    string gravelLangCode = $"{Core.ModId}:info-rubblestorage-gravel(count={{0}})";
-                    string sandLangCode = $"{Core.ModId}:info-rubblestorage-sand(count={{0}})";
+                    string stoneLangCode = $"{Core.LegacyModId}:info-rubblestorage-stone(count={{0}})";
+                    string gravelLangCode = $"{Core.LegacyModId}:info-rubblestorage-gravel(count={{0}})";
+                    string sandLangCode = $"{Core.LegacyModId}:info-rubblestorage-sand(count={{0}})";
 
                     string stoneText = Lang.Get(stoneLangCode, Inventory.StoneSlot.StackSize);
                     string gravelText = Lang.Get(gravelLangCode, Inventory.GravelSlot.StackSize);
                     string sandText = Lang.Get(sandLangCode, Inventory.SandSlot.StackSize);
 
-                    string locked = Lang.Get($"{Core.ModId}:info-rubblestorage-locked");
+                    string locked = Lang.Get($"{Core.LegacyModId}:info-rubblestorage-locked");
                     switch (LockedType)
                     {
                         case RubbleStorageSelectType.Stone:
@@ -193,7 +193,7 @@ namespace StoneQuarry
 
                     string rockName = Lang.Get(Inventory.StoredRock.ToString());
 
-                    dsc.AppendLine(Lang.Get($"{Core.ModId}:info-rubblestorage-type(type={{0}})", rockName));
+                    dsc.AppendLine(Lang.Get($"{Core.LegacyModId}:info-rubblestorage-type(type={{0}})", rockName));
                     dsc.AppendLine(stoneText);
                     dsc.AppendLine(gravelText);
                     dsc.AppendLine(sandText);

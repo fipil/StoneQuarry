@@ -1,4 +1,4 @@
-using CommonLib.Extensions;
+using StoneQuarry.Lib.Extensions;
 using System.Collections.Generic;
 using System.Text;
 using Vintagestory.API.Client;
@@ -93,7 +93,7 @@ namespace StoneQuarry
         {
             base.GetBlockInfo(forPlayer, dsc);
 
-            string langKey = $"{Core.ModId}:info-stoneslab-heldinfo(count={{0}},stone={{1}})";
+            string langKey = $"{Core.LegacyModId}:info-stoneslab-heldinfo(count={{0}},stone={{1}})";
 
             for (int i = 0; i < Inventory?.Count; i++)
             {

@@ -31,7 +31,7 @@
   "shape": { "base": "item/tool/adminhammer" },
   "textures": {
     "metal": { "base": "game:block/fire-pink" },
-    "wood": { "base": "game:item/tool/material/wood" }
+    "wood": { "base": "game:item/tool/handle" }
   },
   "tooltier": 5,
   "durability": 99999,

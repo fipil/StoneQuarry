@@ -7,5 +7,6 @@
   },
   "pattern": [["######"]],
   "name": "Rough Cut Chisel",
+  "code": "chisel-roughcut-{metal}",
   "output": { "type": "item", "code": "chisel-roughcut-{metal}" }
 }

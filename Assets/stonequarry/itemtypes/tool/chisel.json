@@ -60,7 +60,7 @@
   "shape": { "base": "item/tool/{type}chisel" },
   "textures": {
     "metal": { "base": "game:block/metal/ingot/{material}" },
-    "wood": { "base": "game:item/tool/material/handle" }
+    "wood": { "base": "game:item/tool/handle" }
   },
   "creativeinventory": { "general": [ "*" ], "items": [ "*" ], "tools": [ "*" ], "stonequarry": [ "*" ] },
   "heldRightReadyAnimation": "chiselready",

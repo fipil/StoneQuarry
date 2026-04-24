@@ -1,4 +1,4 @@
-using CommonLib.Utils;
+using StoneQuarry.Lib.Utils;
 using System;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;

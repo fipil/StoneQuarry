@@ -18,5 +18,6 @@
     ]
   ],
   "name": "Wedge Chisel",
+  "code": "wedgechiselhead-{metal}",
   "output": { "type": "item", "code": "wedgechiselhead-{metal}" }
 }

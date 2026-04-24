@@ -1,5 +1,5 @@
-using CommonLib.Config;
-using CommonLib.Extensions;
+using StoneQuarry.Lib.Config;
+using StoneQuarry.Lib.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -178,7 +178,7 @@ namespace StoneQuarry
         {
             base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
 
-            string langKey = $"{Core.ModId}:info-stoneslab-heldinfo(count={{0}},stone={{1}})";
+            string langKey = $"{Core.LegacyModId}:info-stoneslab-heldinfo(count={{0}},stone={{1}})";
 
             int qslots = inSlot.Itemstack.Attributes.GetInt("qslots", 0);
             if (qslots > 0)
@@ -202,28 +202,28 @@ namespace StoneQuarry
             return ObjectCacheUtil.GetOrCreate(world.Api, $"{Core.ModId}-wi-stoneslab-base", () => new[]
             {
                 new WorldInteraction {
-                    ActionLangCode = $"{Core.ModId}:wi-stoneslab-rockpolished",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-rockpolished",
                     MouseButton = EnumMouseButton.Right,
                     Itemstacks = GetTools("rockpolished")
                 },
                 new WorldInteraction {
-                    ActionLangCode = $"{Core.ModId}:wi-stoneslab-rock",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-rock",
                     MouseButton = EnumMouseButton.Right,
                     Itemstacks = GetTools("rock")
                 },
                 new WorldInteraction {
-                    ActionLangCode = $"{Core.ModId}:wi-stoneslab-stone",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-stone",
                     MouseButton = EnumMouseButton.Right,
                     Itemstacks = GetTools("stone")
                 },
                 new WorldInteraction {
-                    ActionLangCode = $"{Core.ModId}:wi-stoneslab-stonebrick",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-stonebrick",
                     MouseButton = EnumMouseButton.Right,
                     Itemstacks = GetTools("stonebrick")
                 },
                 new WorldInteraction
                 {
-                    ActionLangCode = $"{Core.ModId}:wi-stoneslab-changerock",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-changerock",
                     MouseButton = EnumMouseButton.Right,
                     HotKeyCode = "sprint"
                 }
@@ -242,13 +242,13 @@ namespace StoneQuarry
                         {
                             new WorldInteraction
                             {
-                                ActionLangCode = $"{Core.ModId}:wi-stoneslab-addrock",
+                                ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-addrock",
                                 MouseButton = EnumMouseButton.Right,
                                 Itemstacks = rocks
                             },
                             new WorldInteraction
                             {
-                                ActionLangCode = $"{Core.ModId}:wi-stoneslab-removerock",
+                                ActionLangCode = $"{Core.LegacyModId}:wi-stoneslab-removerock",
                                 MouseButton = EnumMouseButton.Right,
                                 HotKeyCode = "sprint",
                                 Itemstacks = rocks

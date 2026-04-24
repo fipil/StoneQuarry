@@ -16,5 +16,6 @@
     ]
   ],
   "name": "Splitter plug",
+  "code": "plugandfeather-{metal}",
   "output": { "type": "block", "code": "plugandfeather-{metal}-0-down-north" }
 }

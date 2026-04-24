@@ -1,4 +1,4 @@
-using CommonLib.Config;
+using StoneQuarry.Lib.Config;
 
 namespace StoneQuarry
 {

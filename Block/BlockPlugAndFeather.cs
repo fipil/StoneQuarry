@@ -1,5 +1,5 @@
-using CommonLib.Config;
-using CommonLib.Extensions;
+using StoneQuarry.Lib.Config;
+using StoneQuarry.Lib.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -522,7 +522,7 @@ namespace StoneQuarry
         {
             base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
             dsc.AppendLineOnce();
-            dsc.Append(Lang.Get($"{Core.ModId}:info-plugandfeather-heldinfo(range={{0}},thinrange={{1}})", MaxSearchRange, MaxSearchRange * MaxSearchRange));
+            dsc.Append(Lang.Get($"{Core.LegacyModId}:info-plugandfeather-heldinfo(range={{0}},thinrange={{1}})", MaxSearchRange, MaxSearchRange * MaxSearchRange));
         }
 
         public override WorldInteraction[] GetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection selection, IPlayer forPlayer)
@@ -533,7 +533,7 @@ namespace StoneQuarry
             return new[] {
                 new WorldInteraction
                 {
-                    ActionLangCode = $"{Core.ModId}:wi-plugandfeather-quarryimpact",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-plugandfeather-quarryimpact",
                     MouseButton = EnumMouseButton.Right,
                     Itemstacks = ObjectCacheUtil.GetOrCreate(world.Api, $"{Core.ModId}-plugimpact", () =>
                     {
@@ -553,7 +553,7 @@ namespace StoneQuarry
                 } }
                 .AppendIf(isNetworkPart, new WorldInteraction
                 {
-                    ActionLangCode = $"{Core.ModId}:wi-plugandfeather-togglepreview",
+                    ActionLangCode = $"{Core.LegacyModId}:wi-plugandfeather-togglepreview",
                     MouseButton = EnumMouseButton.Right,
                     HotKeyCode = "ctrl"
                 })

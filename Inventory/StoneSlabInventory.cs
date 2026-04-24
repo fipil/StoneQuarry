@@ -1,4 +1,4 @@
-using CommonLib.Utils;
+using StoneQuarry.Lib.Utils;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Vintagestory.API.Common;
@@ -126,7 +126,7 @@ namespace StoneQuarry
 
             if (!RockData.types.Contains(type))
             {
-                string errorCode = $"{Core.ModId}:ingameerror-stoneslab-unknown-tool";
+                string errorCode = $"{Core.LegacyModId}:ingameerror-stoneslab-unknown-tool";
                 (byPlayer as IServerPlayer)?.SendIngameError("", Lang.Get(errorCode));
                 return null;
             }
@@ -150,7 +150,7 @@ namespace StoneQuarry
                     }
                     else
                     {
-                        string errorCode = $"{Core.ModId}:ingameerror-stoneslab-unknown-drop";
+                        string errorCode = $"{Core.LegacyModId}:ingameerror-stoneslab-unknown-drop";
                         (byPlayer as IServerPlayer)?.SendIngameError("", Lang.Get(errorCode));
                         return null;
                     }

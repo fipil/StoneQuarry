@@ -1,4 +1,4 @@
-using CommonLib.Utils;
+using StoneQuarry.Lib.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -209,17 +209,17 @@ namespace StoneQuarry
 
             if (inv.StoredRock == null)
             {
-                dsc.AppendLine(Lang.Get($"{Core.ModId}:info-rubblestorage-empty"));
+                dsc.AppendLine(Lang.Get($"{Core.LegacyModId}:info-rubblestorage-empty"));
             }
             else
             {
-                string stoneLangCode = $"{Core.ModId}:info-rubblestorage-stone(count={{0}})";
-                string gravelLangCode = $"{Core.ModId}:info-rubblestorage-gravel(count={{0}})";
-                string sandLangCode = $"{Core.ModId}:info-rubblestorage-sand(count={{0}})";
+                string stoneLangCode = $"{Core.LegacyModId}:info-rubblestorage-stone(count={{0}})";
+                string gravelLangCode = $"{Core.LegacyModId}:info-rubblestorage-gravel(count={{0}})";
+                string sandLangCode = $"{Core.LegacyModId}:info-rubblestorage-sand(count={{0}})";
 
                 string rockName = Lang.Get(inv.StoredRock.ToString());
 
-                dsc.AppendLine(Lang.Get($"{Core.ModId}:info-rubblestorage-type(type={{0}})", rockName));
+                dsc.AppendLine(Lang.Get($"{Core.LegacyModId}:info-rubblestorage-type(type={{0}})", rockName));
                 dsc.AppendLine(Lang.Get(stoneLangCode, inv.StoneSlot.StackSize));
                 dsc.AppendLine(Lang.Get(gravelLangCode, inv.GravelSlot.StackSize));
                 dsc.AppendLine(Lang.Get(sandLangCode, inv.SandSlot.StackSize));
@@ -245,20 +245,20 @@ namespace StoneQuarry
                     {
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-hammer",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-hammer",
                             MouseButton = EnumMouseButton.Right,
                             Itemstacks = GetRubbleHammers()
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-add-one",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-add-one",
                             MouseButton = EnumMouseButton.Right,
                             Itemstacks = GetAvailableContent("stone"),
                             GetMatchingStacks = GetMatchingStacks_StoneType
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-add-stack",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-add-stack",
                             MouseButton = EnumMouseButton.Right,
                             HotKeyCode = "sprint",
                             Itemstacks = GetAvailableContent("stone", true),
@@ -266,13 +266,13 @@ namespace StoneQuarry
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-add-all",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-add-all",
                             MouseButton = EnumMouseButton.Right,
                             RequireFreeHand = true
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-water",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-water",
                             MouseButton = EnumMouseButton.Right,
                             Itemstacks = GetWaterPortionStacks()
                         }
@@ -284,18 +284,18 @@ namespace StoneQuarry
                     {
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-take-one-{type}",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-take-one-{type}",
                             MouseButton = EnumMouseButton.Right
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-take-stack-{type}",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-take-stack-{type}",
                             MouseButton = EnumMouseButton.Right,
                             HotKeyCode = "sprint"
                         },
                         new WorldInteraction
                         {
-                            ActionLangCode = $"{Core.ModId}:wi-rubblestorage-lock",
+                            ActionLangCode = $"{Core.LegacyModId}:wi-rubblestorage-lock",
                             MouseButton = EnumMouseButton.Right,
                             HotKeyCode = "sneak"
                         }

@@ -10,5 +10,6 @@
     "###___",
     "_###__"
   ]],
+  "code": "finishingchiselhead-{metal}",
   "output": { "type": "item", "code": "finishingchiselhead-{metal}" }
 }

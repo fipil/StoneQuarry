@@ -1,5 +1,5 @@
-using CommonLib.Config;
-using CommonLib.Extensions;
+using StoneQuarry.Lib.Config;
+using StoneQuarry.Lib.Extensions;
 using System;
 using System.Collections.Generic;
 using Vintagestory.API.Common;
@@ -148,7 +148,7 @@ namespace StoneQuarry
             {
                 string dropItemString = $"stoneslab-{slabSize}-north";
 
-                AssetLocation dropItemLoc = new(Core.ModId, dropItemString);
+                AssetLocation dropItemLoc = new(Core.LegacyModId, dropItemString);
                 if (world.GetBlock(dropItemLoc) is BlockStoneSlab dropItem)
                 {
                     ItemStack dropItemStack = new(dropItem, 1);

@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "modid": "stonequarryrepckfipil",
+  "name": "Stone Quarry",
+  "version": "3.6.0",
+  "authors": ["DArkHekRoMaNT"],
+  "description": "Adds stone quarrying mechanics with plug and feather, stone slabs, and rubble storage",
+  "website": "https://github.com/DArkHekRoMaNT/StoneQuarry",
+  "side": "universal",
+  "requiredOnClient": true,
+  "requiredOnServer": true
+}

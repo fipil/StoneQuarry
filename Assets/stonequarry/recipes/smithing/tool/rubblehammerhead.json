@@ -20,5 +20,6 @@
     ]
   ],
   "name": "Rubble Hammer",
+  "code": "rubblehammerhead-{metal}",
   "output": { "type": "item", "code": "rubblehammerhead-{metal}" }
 }

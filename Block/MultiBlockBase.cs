@@ -41,7 +41,12 @@ namespace StoneQuarry
 
         public virtual bool MBDoParticalSelection(IWorldAccessor world, BlockPos pos, Vec3i offset)
         {
-            return DoParticalSelection(world, pos + offset.AsBlockPos);
+            return DoPartialSelection(world, pos + offset.AsBlockPos);
+        }
+
+        public virtual bool MBDoPartialSelection(IWorldAccessor world, BlockPos pos, Vec3i offset)
+        {
+            return DoPartialSelection(world, pos + offset.AsBlockPos);
         }
 
         public virtual WorldInteraction[] MBGetPlacedBlockInteractionHelp(IWorldAccessor world, BlockSelection blockSel, IPlayer forPlayer, Vec3i offset)

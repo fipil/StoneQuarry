@@ -49,7 +49,7 @@ namespace StoneQuarry
             {
                 try
                 {
-                    var dataLoc = new AssetLocation($"{Mod.Info.ModID}:config/rockdata.json");
+                    var dataLoc = new AssetLocation($"{Core.LegacyModId}:config/rockdata.json");
                     foreach (RockData rockData in api.Assets.Get<List<RockData>>(dataLoc))
                     {
                         _data.Add(rockData.Rock, rockData);
