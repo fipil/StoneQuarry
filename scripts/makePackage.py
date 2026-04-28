@@ -61,13 +61,13 @@ def create_zip(version):
                 zf.write(filepath, filename)
                 print(f"  + {filename}")
 
-        # Assets directory
+        # Assets directory (lowercase paths for VS compatibility in zip)
         for dirpath, dirnames, filenames in os.walk(ASSETS_DIR):
             for filename in filenames:
                 filepath = os.path.join(dirpath, filename)
                 arcname = os.path.relpath(filepath, PROJECT_ROOT)
-                # Normalize to forward slashes for zip
-                arcname = arcname.replace("\\", "/")
+                # Normalize to forward slashes and lowercase for zip
+                arcname = arcname.replace("\\", "/").lower()
                 zf.write(filepath, arcname)
                 print(f"  + {arcname}")
 
