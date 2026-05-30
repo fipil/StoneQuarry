@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "이 망치의 힘에 감히 도전한 해적들의 전설은 이 무모한 자들의 육편처럼 빠르게 퍼져나갔습니다.\n",
     "ingameerror-stoneslab-unknown-drop": "이 석재는 해당 종류가 존재하지 않습니다",
     "ingameerror-stoneslab-unknown-tool": "알수없는 도구",
+    "ingameerror-rubblestorage-unsupported-rock": "이 종류의 암석은 잔해 저장고에 넣을 수 없습니다: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "범위: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "바위: {0}",

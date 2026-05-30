@@ -126,6 +126,7 @@
 
   "ingameerror-stoneslab-unknown-drop": "This type does not exist for this stone",
   "ingameerror-stoneslab-unknown-tool": "Unknown tool",
+  "ingameerror-rubblestorage-unsupported-rock": "This type of rock cannot be inserted into rubble storage: {0}",
 
   "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
   "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Range: {0}x{0}x{0}, 1x{0}x{1}",

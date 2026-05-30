@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "その力に敢然と対抗した海賊たちの伝説は、命知らずの海賊たちの破片と同じように瞬く間に広まった。\n",
     "ingameerror-stoneslab-unknown-drop": "この石には、この種類は存在しません。",
     "ingameerror-stoneslab-unknown-tool": "不明な道具",
+    "ingameerror-rubblestorage-unsupported-rock": "この種類の岩石は瓦礫保管庫に入れられません: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "範囲: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "岩: {0}",

@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Les légendes des pirates qui osaient s'opposer à son pouvoir se sont disséminées aussi rapidement que les morceaux de ces odieux personnages.\n",
     "ingameerror-stoneslab-unknown-drop": "Ce type n'existe pas pour cette pierre",
     "ingameerror-stoneslab-unknown-tool": "Outil inconnu",
+    "ingameerror-rubblestorage-unsupported-rock": "Ce type de roche ne peut pas être inséré dans le stockage de gravats : {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Portée : {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Roche : {0}",

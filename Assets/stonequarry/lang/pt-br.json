@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Lendas de piratas que ousaram se opor ao seu poder se espalharam tão rápido quanto as peças destes rufiões.\n",
     "ingameerror-stoneslab-unknown-drop": "Este tipo não existe para esta pedra",
     "ingameerror-stoneslab-unknown-tool": "Ferramenta desconhecida",
+    "ingameerror-rubblestorage-unsupported-rock": "Este tipo de rocha não pode ser inserido no armazenamento de entulho: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Alcance: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Rocha: {0}",

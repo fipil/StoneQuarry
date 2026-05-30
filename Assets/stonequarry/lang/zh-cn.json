@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "那些敢于对抗其力量的海盗的传说和这些胆大妄为的人的碎片一样迅速传播开来。\n",
     "ingameerror-stoneslab-unknown-drop": "此岩石不存在此类型",
     "ingameerror-stoneslab-unknown-tool": "未知工具",
+    "ingameerror-rubblestorage-unsupported-rock": "这种岩石不能放入碎石储存器：{0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "范围: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "岩石：{0}",

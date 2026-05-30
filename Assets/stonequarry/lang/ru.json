@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Легенды о пиратах, которые осмелились противиться его силе, разносятся также быстро, как и кусочки этих смельчаков.\n",
     "ingameerror-stoneslab-unknown-drop": "Такой тип для этого камня не существует",
     "ingameerror-stoneslab-unknown-tool": "Неизвестный инструмент",
+    "ingameerror-rubblestorage-unsupported-rock": "Этот тип породы нельзя поместить в хранилище щебня: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Диапазон: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Тип камня: {0}",

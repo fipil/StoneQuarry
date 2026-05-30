@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Legendy o piratach, którzy ośmielili się przeciwstawić jego mocy, rozprzestrzeniały się tak szybko, jak kawałki tych śmiałków.\n",
     "ingameerror-stoneslab-unknown-drop": "Ten typ nie istnieje dla tego kamienia",
     "ingameerror-stoneslab-unknown-tool": "Nieznane narzędzie",
+    "ingameerror-rubblestorage-unsupported-rock": "Tego rodzaju skały nie można włożyć do składu rumoszu: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Zasięg: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Skała: {0}",

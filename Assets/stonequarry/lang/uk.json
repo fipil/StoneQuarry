@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Легенди про піратів, які наважилися протистояти його владі, поширюються так само швидко, як шматки цих сміливців.\n",
     "ingameerror-stoneslab-unknown-drop": "Цей тип не існує для цього каменю",
     "ingameerror-stoneslab-unknown-tool": "Невідомий інструмент",
+    "ingameerror-rubblestorage-unsupported-rock": "Цей тип породи не можна покласти до сховища щебеню: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Діапазон: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Скеля: {0}",

@@ -8,6 +8,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
+using Vintagestory.API.Server;
 using Vintagestory.API.Util;
 
 namespace StoneQuarry
@@ -166,6 +167,10 @@ namespace StoneQuarry
                     (byPlayer as IClientPlayer)?.TriggerFpAnimation(EnumHandInteract.HeldItemAttack);
                     world.PlaySoundAt(SQSounds.StoneCrush, byPlayer, byPlayer, true);
                 }
+                else
+                {
+                    TryNotifyUnsupportedRock();
+                }
             }
 
             void TryTakeAll()
@@ -176,6 +181,33 @@ namespace StoneQuarry
                     {
                         (byPlayer as IClientPlayer)?.TriggerFpAnimation(EnumHandInteract.HeldItemAttack);
                         world.PlaySoundAt(SQSounds.StoneCrush, byPlayer, byPlayer, true);
+                    }
+                }
+            }
+
+            void TryNotifyUnsupportedRock()
+            {
+                if (be.Inventory == null || activeStack == null)
+                {
+                    return;
+                }
+
+                AssetLocation code = activeStack.Collectible.Code;
+                if (_rockManager.TryResolveCode(code, out _, out AssetLocation? rock)
+                    && !be.Inventory.CanStoreRock(rock))
+                {
+                    string rockName = Lang.Get(rock.ToString());
+                    const string errorCode = "stonequarry-rubblestorage-unsupported-rock";
+                    string message = Lang.Get($"{Core.LegacyModId}:ingameerror-rubblestorage-unsupported-rock", rockName);
+
+                    if (api.Side == EnumAppSide.Client)
+                    {
+                        (api as ICoreClientAPI)?.TriggerIngameError(this, errorCode, message);
+                    }
+
+                    if (api.Side == EnumAppSide.Server && byPlayer is IServerPlayer serverPlayer)
+                    {
+                        serverPlayer.SendIngameError(errorCode, message);
                     }
                 }
             }

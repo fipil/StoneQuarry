@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Le leggende dei pirati che hanno osato opporsi al suo potere si sono diffuse rapidamente come i pezzi di questi temerari.\n",
     "ingameerror-stoneslab-unknown-drop": "Questo tipo non esiste per questa pietra",
     "ingameerror-stoneslab-unknown-tool": "Attrezzo sconociuto",
+    "ingameerror-rubblestorage-unsupported-rock": "Questo tipo di roccia non può essere inserito nel deposito di macerie: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Raggio: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Roccia: {0}",

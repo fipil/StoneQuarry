@@ -7,6 +7,15 @@ namespace StoneQuarry
     {
         public IRockManager RockManager { get; }
 
+        public bool CanStoreRock(AssetLocation rock)
+        {
+            RockData? data = RockManager.GetValue(rock);
+            return data?[
+                "stone"] != null
+                && data["gravel"] != null
+                && data["sand"] != null;
+        }
+
         public AssetLocation? StoredRock
         {
             get
@@ -77,6 +86,11 @@ namespace StoneQuarry
             AssetLocation code = fromSlot.Itemstack.Collectible.Code;
             if (RockManager.TryResolveCode(code, out string? contentType, out AssetLocation? rockName))
             {
+                if (!CanStoreRock(rockName))
+                {
+                    return false;
+                }
+
                 if (StoredRock == null || StoredRock.Equals(rockName))
                 {
                     RubbleStorageItemSlot? slot = GetSlotByType(contentType);

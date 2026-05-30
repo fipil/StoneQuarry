@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Las leyendas de los piratas que se atrevieron a desafiar su poder se extendieron tan rápido como los fragmentos de estos audaces aventureros.\n",
     "ingameerror-stoneslab-unknown-drop": "Este tipo no existe para esta roca",
     "ingameerror-stoneslab-unknown-tool": "Herramienta Desconocida",
+    "ingameerror-rubblestorage-unsupported-rock": "Este tipo de roca no se puede insertar en el almacén de escombros: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Rango: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Roca: {0}",

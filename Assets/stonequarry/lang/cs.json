@@ -113,6 +113,7 @@
     "itemdesc-adminhammer": "Legenda o pirátech, kteří se odvážili postavit jeho moci, se šířila stejně rychle jako kousky těchto dobrodruhů.\n",
     "ingameerror-stoneslab-unknown-drop": "Tento typ kamenné desky pro tento kámen neexistuje",
     "ingameerror-stoneslab-unknown-tool": "Neznámí nástroj",
+    "ingameerror-rubblestorage-unsupported-rock": "Tento druh kamene nelze vložit do uložiště kamene: {0}",
     "info-stoneslab-heldinfo(count={0},stone={1})": "x{0} {1}",
     "info-plugandfeather-heldinfo(range={0},thinrange={1})": "Rozsah: {0}x{0}x{0}, 1x{0}x{1}",
     "info-rubblestorage-type(type={0})": "Blok kamene: {0}",
